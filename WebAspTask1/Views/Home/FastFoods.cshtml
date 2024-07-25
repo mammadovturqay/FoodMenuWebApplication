@@ -1,0 +1,17 @@
+﻿@model WebAspTask1.Models.FoodCategoriesViewModel
+
+<h2>Fast Foods List</h2>
+
+@if (Model?.FastFoods != null && Model.FastFoods.Count > 0)
+{
+    <ul>
+        @foreach (var fastFoods in Model.FastFoods)
+        {
+            <li>@fastFoods.Name - @fastFoods.Description - @fastFoods.Price $</li>
+        }
+    </ul>
+}
+else
+{
+    <p>No fast foods available.</p>
+}

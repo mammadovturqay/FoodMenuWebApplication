@@ -1,0 +1,25 @@
+﻿@model WebAspTask1.Models.FoodCategoriesViewModel  //Home yaradildi +
+
+<h2>Fast Foods</h2>
+<ul>
+    @foreach (var fastFood in Model.FastFoods)
+    {
+        <li>@fastFood.Name - @fastFood.Description - @fastFood.Price $</li>
+    }
+</ul>
+
+<h2>Hot Meals</h2>
+<ul>
+    @foreach (var hotMeal in Model.HotMeals)
+    {
+        <li>@hotMeal.Name - @hotMeal.Description - @hotMeal.Price $</li>
+    }
+</ul>
+
+<h2>Drinks</h2>
+<ul>
+    @foreach (var drink in Model.Drinks)
+    {
+        <li>@drink.Name - @drink.Description - @drink.Price $</li>
+    }
+</ul>

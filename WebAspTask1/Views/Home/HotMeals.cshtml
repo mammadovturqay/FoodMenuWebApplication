@@ -1,0 +1,9 @@
+﻿@model WebAspTask1.Models.FoodCategoriesViewModel
+
+<h2>Hot Meals List</h2>
+<ul>
+    @foreach (var hotMeal in Model.HotMeals)
+    {
+        <li>@hotMeal.Name - @hotMeal.Description - @hotMeal.Price $</li>
+    }
+</ul>
